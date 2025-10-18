@@ -71,7 +71,7 @@ y_pred = clf.predict(X_test_pca)                                                
 
 # === Kết quả ===
 acc = accuracy_score(y_test, y_pred)                                                        
-print(f"\n🎯 Độ chính xác trên tập test: {acc:.4f}\n")
+print(f"\n Độ chính xác trên tập test: {acc:.4f}\n")
 
 print("Báo cáo phân loại:")
 print(classification_report(y_test, y_pred, labels=[0, 1, 2, 3], target_names=classes, zero_division=0))
@@ -90,4 +90,5 @@ plt.show()
 
 print("Các lớp xuất hiện trong y_test:", np.unique(y_test))
 print("Các lớp xuất hiện trong y_pred:", np.unique(y_pred))
+
 
